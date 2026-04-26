@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/Fightingkid4/Technical-Assignment/issues"
   },
-  "homepage": "https://github.com/Fightingkid4/Technical-Assignment#readme"
+  "homepage": "https://github.com/Fightingkid4/Technical-Assignment#readme",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "prisma": "^6.19.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4"
+  }
 }
