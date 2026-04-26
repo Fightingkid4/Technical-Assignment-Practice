@@ -1,0 +1,19 @@
+{
+  "name": "technical-assignment",
+  "version": "1.0.0",
+  "description": "A practice watchlist api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fightingkid4/Technical-Assignment.git"
+  },
+  "author": "Amaree Myrie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fightingkid4/Technical-Assignment/issues"
+  },
+  "homepage": "https://github.com/Fightingkid4/Technical-Assignment#readme"
+}
