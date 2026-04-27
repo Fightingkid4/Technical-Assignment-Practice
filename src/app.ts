@@ -1,4 +1,5 @@
 import express from "express";
+import { errorHandler, notFoundHandler } from "./middleware/error-handler";
 
 export const createApp = () => {
   const app = express();
@@ -7,5 +8,7 @@ export const createApp = () => {
 app.use("/test", (req, res) => {
   res.json({ message: "Hello, World!" });
 });
+app.use(notFoundHandler);
+  app.use(errorHandler);
   return app;
 };
