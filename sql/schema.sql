@@ -1,0 +1,11 @@
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
+CREATE TABLE IF NOT EXISTS watchlist_items (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  external_product_id INTEGER NOT NULL UNIQUE,
+  title TEXT NOT NULL,
+  price NUMERIC(10, 2) NOT NULL,
+  image TEXT NOT NULL,
+  category TEXT NOT NULL,
+  added_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
