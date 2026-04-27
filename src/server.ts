@@ -1,7 +1,9 @@
 import { createApp } from "./app";
+import { loadConfig } from "./config/env";
+const config = loadConfig();
 const app = createApp()
-const server = app.listen(3000, () => {
-  console.log(`Watchlist API listening on port ${3000}`);
+const server = app.listen(config.PORT, () => {
+  console.log(`Watchlist API listening on port ${config.PORT}`);
 });
 const shutdown = async () => {
     server.close(() => process.exit(0));
